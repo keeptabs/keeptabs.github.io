@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: KeepTabs - Safari's Tabs/Windows Manager
 permalink: /
 ---
 
