@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
+  <link rel="icon" href="/favicon.png">
+
+  <title>KeepTabs: Safari's Tabs/Windows Manager</title>
+</head>
+<body>
+  <div class="container maincontainer">
+    <img src="/imgs/1744x576-with-title.png" class="my-logo-center">
+    <a href="#"><img src="/imgs/badge.png" class="badge-center"></a>
+    <p class="text-justify">When working with many Safari windows containing many tabs, it’s easy to get lost.<br/>We want to save them for later, so we let them open, but in the end, we end up having a lot of opened windows, that overload our desktop.</p>
+    <p class="text-justify">KeepTabs helps you organize your Safari windows and tabs, in order to keep your workspace light and clean.</p>
+    <img src="/imgs/iMac-869x712.png" class="my-imac-center">
+    <p>With KeepTabs, you can easily save multiple Safari windows as a browsing session. By saving sessions, you can safely close your Safari windows. And when needed, you simply restore them.</p>
+    <div class="row">
+      <div class="col-sm border rounded">
+        <h4>Save</h4>
+        <nav>
+          <div class="nav nav-pills nav-justified" id="saveTab" role="tablist">
+            <a class="nav-item nav-link active" id="saveallwindows-tab" data-toggle="tab" href="#saveallwindows" role="tab" aria-controls="saveallwindows" aria-selected="true">Save all windows</a>
+            <a class="nav-item nav-link" id="savethiswindow-tab" data-toggle="tab" href="#savethiswindow" role="tab" aria-controls="savethiswindow" aria-selected="false">Save this window</a>
+            <a class="nav-item nav-link" id="savethistab-tab" data-toggle="tab" href="#savethistab" role="tab" aria-controls="savethistab" aria-selected="false">Save this tab</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="saveTabContent">
+          <div class="tab-pane fade show active" id="saveallwindows" role="tabpanel" aria-labelledby="saveallwindows-tab">
+            <h5>Save all windows</h5>
+            <p>Save all Safari's windows at once in a browsing session.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/save-all-windows.png">
+              <source src="/videos/save-all-windows.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="tab-pane fade" id="savethiswindow" role="tabpanel" aria-labelledby="savethiswindow-tab">
+            <h4>Save this window</h4>
+            <p>Save only the current Safari window in an new session, or add it to an existing session.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/save-this-window.png">
+              <source src="/videos/save-this-window.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="tab-pane fade" id="savethistab" role="tabpanel" aria-labelledby="savethistab-tab">
+            <h4>Save this tab</h4>
+            <p>Add the current tab in an existing window, within an existing session.</p>
+            <video controls muted  preload="metadata" class="videos" poster="/imgs/save-this-tab.png">
+              <source src="/videos/save-this-tab.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm border rounded">
+        <h3>Edit</h3>
+        <nav>
+          <div class="nav nav-pills nav-justified" id="editTab" role="tablist">
+            <a class="nav-item nav-link active" id="rename-tab" data-toggle="tab" href="#rename" role="tab" aria-controls="rename" aria-selected="true">Rename</a>
+            <a class="nav-item nav-link" id="reorder-tab" data-toggle="tab" href="#reorder" role="tab" aria-controls="reorder" aria-selected="false">Reorder</a>
+            <a class="nav-item nav-link" id="defaulttab-tab" data-toggle="tab" href="#defaulttab" role="tab" aria-controls="defaulttab" aria-selected="false">Default tab</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="editTabContent">
+          <div class="tab-pane fade show active" id="rename" role="tabpanel" aria-labelledby="rename-tab">
+            <h4>Rename</h4>
+            <p>Rename sessions, for example by theme, like "Sports", "News", "Work"...</p>
+            <p>Windows and tabs can also be renamed.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/rename.png">
+              <source src="/videos/rename.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="tab-pane fade" id="reorder" role="tabpanel" aria-labelledby="reorder-tab">
+            <h4>Reorder</h4>
+            <p>Reorder sessions, windows, and tabs, so they appear in the right order when restored.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/reorder.png">
+              <source src="/videos/reorder.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="tab-pane fade" id="defaulttab" role="tabpanel" aria-labelledby="defaulttab-tab">
+            <h4>Update default tab</h4>
+            <p>With several tabs in a window, select which tab is the default one when restored.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/default-current-tab.png">
+              <source src="/videos/default-current-tab.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm border rounded">
+        <h3>Restore</h3>
+        <div class="tab-content" id="restoreTabContent">
+          <div id="restoresessions">
+            <h4>Restore sessions</h4>
+            <p>Home is where the heart is..</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/restore.png">
+              <source src="/videos/restore.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm border rounded">
+        <h3>Delete</h3>
+        <nav>
+          <div class="nav nav-pills nav-justified" id="deleteTab" role="tablist">
+            <a class="nav-item nav-link active" id="deletesessions-tab" data-toggle="tab" href="#deletesessions" role="tab" aria-controls="deletesessions" aria-selected="true">Delete sessions</a>
+            <a class="nav-item nav-link" id="deletewindows-tab" data-toggle="tab" href="#deletewindows" role="tab" aria-controls="deletewindows" aria-selected="false">Delete windows</a>
+            <a class="nav-item nav-link" id="deletetab-tab" data-toggle="tab" href="#deletetab" role="tab" aria-controls="deletetab" aria-selected="false">Delete tabs</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="deleteTabContent">
+          <div class="tab-pane fade show active" id="deletesessions" role="tabpanel" aria-labelledby="deletesessions-tab">
+            <h4>Delete sessions</h4>
+            <p>Delete one or multiple sessions.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/save-all-windows.png">
+              <source src="/videos/delete-session.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="tab-pane fade" id="deletewindows" role="tabpanel" aria-labelledby="deletewindows-tab">
+            <h4>Delete windows</h4>
+            <p>Delete one or multiple windows within a session.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/save-all-windows.png">
+              <source src="/videos/delete-window.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="tab-pane fade" id="deletetab" role="tabpanel" aria-labelledby="deletetab-tab">
+            <h4>Delete tabs</h4>
+            <p>Delete one or multiple tabs within a window.</p>
+            <video controls muted playsinline preload="metadata" class="videos" poster="/imgs/save-all-windows.png">
+              <source src="/videos/delete-tab.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm border rounded">
+        <h3>iCloud</h3>
+        <div class="tab-content" id="iCloudEnabledTabContent">
+          <div id="icloudenabled">
+            <h4>iCloud enabled</h4>
+            <p>Delete one or multiple windows within a session.</p>
+            <img src="/imgs/icloud-enabled.jpg" class="my-imac-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="card">
+      <div class="card-header">
+        Follow us
+      </div>
+      <div class="card-body">
+        <!-- <h5 class="card-title">Special title treatment</h5> <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+        <a href="https://www.facebook.com/KeepTabs-106710497593781/" target="_blank"><img src="/imgs/facebook.png" class="social"></a>
+        <a href="https://twitter.com/keeptabs3" target="_blank"><img src="/imgs/twitter.png" class="social"></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
